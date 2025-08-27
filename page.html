@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>00:00</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffc0cb;
+    color: #333;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    margin: 0;
+  }
+  h1 { text-align: center; font-size: 2rem; }
+  .button {
+    padding: 15px 30px;
+    background: #ff69b4;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .button:hover { background: #ff1493; }
+</style>
+</head>
+<body>
+  <h1>HAPIBIDI KANSUY SKIBIDIIIW</h1><p>from guah sipaling zigma</p>
+  <a href="surp.html" class="button">PENCET ATUH JAN MALUMALU</a>
+
+  <script>
+    const colors = ["#ff0080", "#ff8c00", "#40e0d0", "#ff69b4", "#8a2be2", "#00ff00", "#ff4500"];
+    let i = 0;
+    setInterval(() => {
+      document.body.style.transition = "background 0.5s";
+      document.body.style.background = colors[i];
+      i = (i + 1) % colors.length;
+    }, 500);
+  </script>
+</body>
+</html>
