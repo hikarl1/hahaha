@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>duhapayabingungjir</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe4e1, #d8f3dc);
+    color: #333;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    margin: 0;
+  }
+  .container { max-width: 600px; text-align: center; padding: 20px; }
+  .letter { margin-top: 20px; font-size: 1.1rem; text-align: left; }
+  .button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover { background: #ff1493; }
+  .gallery img { width: 150px; margin: 10px; border-radius: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>hbd ke 29th jir maba mahasiswa abadi</h1>
+  <div class="letter">
+    <p>
+      P,
+      <br><br>
+        selamat bertambah 1 tahun yh selamat menjadi kepala 2 udah bisa minum2 gasi cihuuuy. 
+        trims ya sudah menjadi kawan smoga kawan trus sampe ijazah dan ijab(zah) ahahaha paham gk paham gk yayauda si.
+        smoga sukses ya apapun jalan tujuan hidupmu smoga dilancarkan oleh Tuhan YME amiinn.
+        smoga orangtua nan sodara sehat slalu, dilancarkan rezekinya , dan kawan kawan.  
+        <br>
+        <br>
+        <br>
+        <br>
+        ubur ubur ikan lele
+        <br>semangat teruzx ya leee
+        <br>jalan jalan ke malang
+        <br>beta buka gudang bendera sudah hilang
+        <br><br>
+        yayaudasi hbd wuatb gbu gws 
+        <br>kadonya nyusul pas ada kelas bareng aja yak
+      </p>
+    </p>
+  </div>
+
+  <div class="gallery">
+    <img src="photostrip1.png" alt="photobox">
+    <img src="photostrip2.png" alt="photobox">
+  </div>
+
+  <button class="button" id="goOutro">Lanjut ke Outro</button>
+</div>
+
+<script>
+  document.getElementById("goOutro").addEventListener("click", () => {
+    window.location.href = "outro.html";
+  });
+
+  // Floating hearts
+  setInterval(() => {
+    let heart = document.createElement("div");
+    heart.innerHTML = '<img src="muka.jpg" width="36">';
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = "100vh";
+    heart.style.animation = "floatUp 4s linear forwards";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 4000);
+  }, 800);
+</script>
+
+<style>
+@keyframes floatUp {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100vh); opacity: 0; }
+}
+</style>
+</body>
+</html>
